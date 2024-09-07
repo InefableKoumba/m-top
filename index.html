@@ -6,106 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-TOP | Expertise multi-sectorielle</title>
     <link rel="stylesheet" href="./css/output.css">
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
-    <header class="px-4 xl:px-32 bg-background pt-6 xl:pt-10 relative min-h-[51rem] xl:min-h-[42rem]">
+    <header class="px-4 xl:px-32 bg-background pt-6 xl:pt-10 relative min-h-[50rem]">
+        <div class="hidden absolute left-0 top-0 z-50 bg-white w-full" id="mobile-menu">
+            <div class="flex flex-col gap-8 justify-center items-center text-black border-b border-b-white pb-12">
+                <div class="flex items-center justify-between w-full px-4 border-b">
+                    <a href="/"
+                        class="bg-white flex items-center justify-center w-24 h-24 p-2 xl:p-0 xl:w-32 xl:h-32 left-4 xl:left-32 top-0">
+                        <img src="./images/m-top.png" alt="M-TOP logo">
+                    </a>
+                    <button
+                        class="border border-red-500 w-12 h-12 rounded-full p-2 text-2xl text-red-500 font-bold toggle-menu">X</button>
+
+                </div>
+                <div class="flex flex-col group">
+                    <a href="/" class="">Accueil</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#our-services" class="">Services</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#about-us" class="">A propos</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="./pages/complexes-scolaires.html" class="">Complexes Scolaires</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div>
+                    <a href="#contact-us"
+                        class="bg-backgroundLight text-sm px-4 xl:px-6 py-3 xl:py-4 rounded text-white font-medium">Nous
+                        contacter</a>
+                </div>
+            </div>
+        </div>
         <nav class="flex justify-between items-center">
-            <div
+            <a href="/"
                 class="bg-white flex items-center justify-center w-24 h-24 p-2 xl:p-0 xl:w-32 xl:h-32 absolute left-4 xl:left-32 top-0">
-                <svg width="100" height="67" viewBox="0 0 100 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_82_240)">
-                        <path
-                            d="M0.19043 63.4119V40.4329H5.49596L12.0417 50.4124L18.622 40.4329H23.8931V63.4119H19.4833V46.7029L12.0417 58.0283L4.60022 46.7029V63.4119H0.19043Z"
-                            fill="url(#paint0_linear_82_240)" />
-                    </g>
-                    <path d="M32.4198 44.3563V40.1948H52.9976V44.3563H45.327V64.069H40.0907V44.3563H32.4198Z"
-                        fill="url(#paint1_linear_82_240)" />
-                    <g filter="url(#filter1_d_82_240)">
-                        <path
-                            d="M99.942 47.1144C99.942 48.3766 99.6226 49.56 98.9839 50.6646C98.369 51.7693 97.3871 52.6595 96.0387 53.3358C94.714 54.012 93.0341 54.3501 90.9998 54.3501H86.848V63.4117H81.8801V39.811H90.9998C92.916 39.811 94.5483 40.1264 95.8967 40.7577C97.2452 41.389 98.2504 42.2566 98.9129 43.3612C99.5989 44.4659 99.942 45.7169 99.942 47.1144ZM90.7869 50.5294C92.1591 50.5294 93.1761 50.2362 93.8386 49.6503C94.5011 49.0416 94.8322 48.1963 94.8322 47.1144C94.8322 44.8151 93.4837 43.6655 90.7869 43.6655H86.848V50.5294H90.7869Z"
-                            fill="#074166" />
-                    </g>
-                    <path d="M34.7839 51.1683V54.6677H27.6584V51.1683H34.7839Z" fill="#064266" />
-                    <g filter="url(#filter2_d_82_240)">
-                        <path
-                            d="M65.6606 62.0163C70.9076 62.0163 75.1612 57.6295 75.1612 52.2181C75.1612 46.8066 70.9076 42.4198 65.6606 42.4198C60.4136 42.4198 56.16 46.8066 56.16 52.2181C56.16 57.6295 60.4136 62.0163 65.6606 62.0163Z"
-                            stroke="#064267" stroke-width="8" shape-rendering="crispEdges" />
-                    </g>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M31.5734 0.523254L62.9722 36.2169H0.174438L31.5734 0.523254Z" fill="#21201E" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M49.5415 0.523254L81.122 36.2169H17.9612L49.5415 0.523254Z" fill="#517FBD" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M66.6743 0.523254L99.0784 36.2169H34.2709L66.6743 0.523254Z" fill="#6A92CD" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M58.0908 9.97156L81.3327 36.2169H34.8478L58.0908 9.97156Z" fill="#8CAEDB" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M39.8695 9.97156L63.1119 36.2169H16.627L39.8695 9.97156Z" fill="#848589" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M49.0308 20.1198L63.2815 36.217H34.7798L49.0308 20.1198Z" fill="#C1D7EE" />
-                    <defs>
-                        <filter id="filter0_d_82_240" x="0.19043" y="39.4329" width="27.2026" height="24.979"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dx="2.5" />
-                            <feGaussianBlur stdDeviation="0.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix"
-                                values="0 0 0 0 0.568627 0 0 0 0 0.603922 0 0 0 0 0.592157 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_82_240" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_82_240" result="shape" />
-                        </filter>
-                        <filter id="filter1_d_82_240" x="78.3801" y="38.811" width="21.5619" height="25.6008"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dx="-2.5" />
-                            <feGaussianBlur stdDeviation="0.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix"
-                                values="0 0 0 0 0.752941 0 0 0 0 0.745098 0 0 0 0 0.764706 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_82_240" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_82_240" result="shape" />
-                        </filter>
-                        <filter id="filter2_d_82_240" x="52.16" y="38.4198" width="27.0011" height="27.5966"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_82_240" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_82_240" result="shape" />
-                        </filter>
-                        <linearGradient id="paint0_linear_82_240" x1="12.0762" y1="40.4329" x2="12.0762" y2="63.4119"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#034267" />
-                            <stop offset="1" stop-color="#0F3C5F" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_82_240" x1="39.637" y1="48.8043" x2="44.4236" y2="47.3691"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#708DB9" />
-                            <stop offset="1" stop-color="#0B4366" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+                <img src="./images/m-top.png" alt="M-TOP logo">
+            </a>
+            <div class="w-56"></div>
+            <div class="hidden w-full xl:flex gap-8 justify-center items-center text-white font-medium text-sm">
+                <div class="flex flex-col group">
+                    <a href="/" class="">Accueil</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#our-services" class="">Services</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#about-us" class="">A propos</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="./pages/complexes-scolaires.html" class="">Complexes Scolaires</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
             </div>
-            <div></div>
-            <div class="hidden xl:flex gap-8 items-center text-white font-medium text-sm">
-                <a href="/">Accueil</a>
-                <a href="/">Services</a>
-                <a href="/">A propos</a>
-            </div>
-            <div>
+            <div class="w-56 flex justify-end">
                 <a href="#contact-us"
                     class="hidden xl:block bg-backgroundLight text-sm px-4 xl:px-6 py-3 xl:py-4 rounded text-white font-medium">Nous
                     contacter</a>
-                <button class="xl:hidden grid grid-cols-2 gap-1">
+                <button class="xl:hidden grid grid-cols-2 gap-1 toggle-menu">
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
@@ -193,22 +177,22 @@
             </div>
             <div class="relative xl:w-1/2 mt-10 xl:mt-0">
                 <div class="xl:absolute xl:-right-12 xl:-top-20">
-                    <div class="absolute left-0 bottom-0 h-[50%] w-full from-transparent to-[#032D47] bg-gradient-to-b">
+                    <div
+                        class="absolute left-0 -bottom-2 h-[50%] w-full from-transparent to-[#032D47] bg-gradient-to-b">
                     </div>
                     <img src="./images/hero.png" alt="M-TOP workers">
                 </div>
             </div>
         </div>
-        <div class="absolute -z-10 left-0 -bottom-20 xl:bottom-52 w-full h-44 ">
+        <!-- <div class="absolute -z-10 left-0 -bottom-20 xl:bottom-52 w-full h-44 ">
             <svg class="w-full" viewBox="0 0 1920 766" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M1919.21 761.324C1919.71 762.866 1919.98 764.423 1920 766V0H1914.63H1904.98L782.38 0.192932L14.5544 0.323853H-0.00012207V480.515C-0.00012207 619.675 1875.01 624.823 1919.21 761.322V761.324Z"
                     fill="#032D47" />
             </svg>
-        </div>
+        </div> -->
     </header>
-    <div class="h-24 xl:h-64"></div>
-    <section class="px-4 xl:px-32">
+    <section class="px-4 xl:px-32 mt-12" id="our-services">
         <div class="xl:w-2/3 mx-auto space-y-4">
             <h2 class="text-background text-2xl font-bold text-center">Nos domaines d’activité</h2>
             <p class="text-center text-gray-800">Créée en 2012, M-TOP est née de la volonté d'offrir des services de
@@ -222,12 +206,13 @@
             <div class="rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/1.png" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-l-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
                 </div>
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Architecture et BTP</span>
-                        <p class="mt-2">Forts de notre expérience en construction, nous avons réalisé de nombreux
+                        <p class="mt-2 text-gray-300">Forts de notre expérience en construction, nous avons réalisé de
+                            nombreux
                             chantiers
                             à forte
                             valeur ajoutée, alliant innovation et respect des normes de qualité.</p>
@@ -235,27 +220,29 @@
                 </div>
             </div>
             <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Dragage</span>
-                        <p class="mt-2">Prestataire de services en dragage, nous intervenons sur des projets maritimes
+                        <p class="mt-2 text-gray-300">Prestataire de services en dragage, nous intervenons sur des
+                            projets maritimes
                             complexes, garantissant efficacité et respect des normes environnementales.</p>
                     </div>
                 </div>
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/3.jpeg" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-r-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-r-lg xl:rounded-l-none h-full w-full object-cover">
                 </div>
             </div>
             <div class="rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/5.jpeg" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-l-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
                 </div>
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Soutien à l'Agriculture</span>
-                        <p class="mt-2"> Nous fournissons des solutions de soutien aux activités agricoles, contribuant
+                        <p class="mt-2 text-gray-300"> Nous fournissons des solutions de soutien aux activités
+                            agricoles, contribuant
                             ainsi à l'amélioration des rendements et à la durabilité des exploitations.
                         </p>
                     </div>
@@ -263,48 +250,78 @@
             </div>
 
             <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Commerce Général & Import-Export</span>
-                        <p class="mt-2">Grâce à notre réseau international, nous facilitons l'import-export de produits
+                        <p class="mt-2 text-gray-300">Grâce à notre réseau international, nous facilitons
+                            l'import-export de produits
                             de qualité tout en diversifiant notre offre de commerce général.</p>
                     </div>
                 </div>
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/6.jpeg" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-r-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-r-lg xl:rounded-l-none h-full w-full object-cover">
                 </div>
             </div>
             <div class="rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/4.jpeg" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-l-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
                 </div>
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Enseignement</span>
-                        <p class="mt-2">Les complexes scolaires M-TOP offrent un environnement éducatif complet, du
+                        <p class="mt-2 text-gray-300">Les complexes scolaires M-TOP offrent un environnement éducatif
+                            complet, du
                             préscolaire au lycée. Avec 9 ans d'expérience, nous préparons la future génération à
                             l'excellence académique.</p>
+                        <div class="mt-4">
+                            <a href="./pages/complexes-scolaires.html"
+                                class="px-4 rounded py-2 bg-backgroundLight text-white">En
+                                savoir plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
-                <div class="text-white xl:w-[60%] flex items-center bg-background h-56 rounded-b-lg xl:rounded-b-none">
+                <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Soutien aux entreprises pétrolières</span>
-                        <p class="mt-2">Nous accompagnons les entreprises pétrolières dans l'acquisition de matériel et
+                        <p class="mt-2 text-gray-300">Nous accompagnons les entreprises pétrolières dans l'acquisition
+                            de matériel et
                             la gestion de personnel spécialisé, garantissant un soutien logistique optimal.</p>
                     </div>
                 </div>
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/5.jpeg" alt="Architecture et BTP"
-                        class="rounded-t-lg xl:rounded-l-lg h-full w-full object-cover">
+                        class="rounded-t-lg xl:rounded-r-lg xl:rounded-l-none  h-full w-full object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="rounded-sm flex flex-col xl:flex-row items-center mt-4">
+            <div class="w-full xl:w-[40%] h-60 xl:h-96">
+                <img src="./images/programmers.jpeg" alt="Architecture et BTP"
+                    class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
+            </div>
+            <div class="text-white xl:w-[60%] flex items-center bg-background h-96 rounded-b-lg xl:rounded-b-none">
+                <div class="bg-background flex flex-col gap-4 justify-center p-4 xl:p-8">
+                    <span class="font-medium">Innovations technologiques</span>
+                    <p class="mt-2 text-gray-300">Franzer, filiale de M-TOP, se distingue par son savoir-faire dans la
+                        conception et
+                        le développement de solutions mobiles et web sur mesure. En mettant l'accent sur l'innovation et
+                        l'adaptabilité, nous accompagnons entreprises et startups dans leur transformation digitale,
+                        leur permettant de surmonter leurs défis et de saisir les opportunités de croissance.
+                    </p>
+                    <div class="mt-4">
+                        <a target="_blank" href="https://franzer-official-website.vercel.app"
+                            class="px-4 rounded py-3 bg-backgroundLight text-white">
+                            Visiter le site de Franzer</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-background py-24 mt-12 relative">
+    <section class="bg-background py-24 mt-12 relative" id="about-us">
         <div class="hidden absolute right-0 top-0 xl:flex items-center h-full">
             <svg class="w-60 h-full" viewBox="0 0 338 474" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M165.266 358.671L337.98 259.213L337.98 458.129L165.266 358.671Z" fill="#05456E"
@@ -350,8 +367,7 @@
         </div>
     </section>
     <section class="flex justify-center items-center xl:py-24 xl:px-24 rounded-sm">
-        <div
-            class="flex flex-col xl:flex-row gap-x-14 xl:bg-gray-100 py-12 xl:py-0 px-4 xl:p-24 xl:border border-gray-200">
+        <div class="flex flex-col xl:flex-row gap-x-14 xl:bg-gray-100 py-12 px-4 xl:p-24 xl:border border-gray-200">
             <div class="flex flex-col gap-4">
                 <span class="text-background font-bold text-2xl">Partenariats</span>
                 <p class="text-gray-800">Chez M-TOP, nous croyons fermement que la réussite de notre entreprise repose
@@ -433,7 +449,7 @@
                     fill-opacity="0.19" />
             </svg>
         </div>
-        <div class="px-4 xl:px-0 xl:w-2/3 mx-auto">
+        <div class="px-4 xl:px-0 xl:w-2/3 mx-auto" id="contact-us">
             <h2 class="font-bold text-center text-white text-2xl">Contactez-nous</h2>
             <p class="text-center text-gray-100 mt-4 xl:w-[40rem] mx-auto">Nos équipes sont à votre disposition pour
                 répondre à
