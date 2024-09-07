@@ -6,11 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-TOP | Enseignement</title>
     <link rel="stylesheet" href="../css/output.css">
+    <script src="./../js/index.js" defer></script>
 
 </head>
 
 <body>
-    <header class=" relative">
+    <header class="relative">
+        <div class="hidden absolute left-0 top-0 z-50 bg-white w-full" id="mobile-menu">
+            <div class="flex flex-col gap-8 justify-center items-center text-black border-b border-b-white pb-12">
+                <div class="flex items-center justify-between w-full px-4 border-b">
+                    <a href="/"
+                        class="bg-white flex items-center justify-center w-24 h-24 p-2 xl:p-0 xl:w-32 xl:h-32 left-4 xl:left-32 top-0">
+                        <img src="../images/m-top.png" alt="M-TOP logo">
+                    </a>
+                    <button
+                        class="border border-red-500 w-12 h-12 rounded-full p-2 text-2xl text-red-500 font-bold toggle-menu">X</button>
+
+                </div>
+                <div class="flex flex-col group">
+                    <a href="/" class="">Accueil</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#our-services" class="">Services</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="#about-us" class="">A propos</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a href="./pages/complexes-scolaires.html" class="">Complexes Scolaires</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div>
+                    <a href="#contact-us"
+                        class="bg-backgroundLight text-sm px-4 xl:px-6 py-3 xl:py-4 rounded text-white font-medium">Nous
+                        contacter</a>
+                </div>
+            </div>
+        </div>
         <nav class="flex absolute z-20 left-0 top-0 w-full px-4 xl:px-32 py-6 xl:py-8 justify-between items-center">
             <a href="/"
                 class="bg-white flex items-center justify-center w-24 h-24 p-2 xl:p-0 xl:w-32 xl:h-32 absolute left-4 xl:left-32 top-0">
@@ -47,7 +90,7 @@
                 <a href="#contact-us"
                     class="hidden xl:block bg-backgroundLight text-sm px-4 xl:px-6 py-3 xl:py-4 rounded text-white font-medium">Nous
                     contacter</a>
-                <button class="xl:hidden grid grid-cols-2 gap-1">
+                <button class="xl:hidden grid grid-cols-2 gap-1 toggle-menu">
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
                     <div class="w-3.5 h-3.5 bg-gray-200 rounded-sm"></div>
@@ -170,8 +213,7 @@
             <div class="grid xl:grid-cols-3 gap-2 mt-2">
                 <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/IMG-20240902-WA0161.jpg" alt=""
                     srcset="">
-                <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/IMG-20240902-WA0171.jpg" alt=""
-                    srcset="">
+                <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/std.jpg" alt="" srcset="">
                 <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/IMG-20240902-WA0158.jpg" alt=""
                     srcset="">
             </div>
@@ -224,6 +266,9 @@
             </form>
         </div>
     </section>
+    <footer class="bg-background flex justify-center items-center -mt-1 py-4">
+        <span class="text-xs text-white">Copyright © M-TOP 2024 | Tous droits reservés</span>
+    </footer>
 </body>
 
 </html>
