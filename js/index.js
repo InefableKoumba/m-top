@@ -34,19 +34,21 @@ gsap.utils.toArray(".service-card-right").forEach((card) => {
     }
   );
 });
+gsap.utils.toArray(".header-left-text").forEach((card) => {
+  gsap.fromTo(
+    card,
+    {
+      y: 100,
+      opacity: 0,
+    },
+    {
+      scrollTrigger: card,
+      y: 0,
+      opacity: 1,
+    }
+  );
+});
 
-gsap.fromTo(
-  ".header-left-text",
-  {
-    y: 100,
-    opacity: 0,
-  },
-  {
-    scrollTrigger: ".header-left-text",
-    y: 0,
-    opacity: 1,
-  }
-);
 gsap.fromTo(
   ".big-service-card",
   {

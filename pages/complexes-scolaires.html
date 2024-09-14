@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-TOP | Enseignement</title>
     <link rel="stylesheet" href="../css/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./../js/index.js" defer></script>
 
 </head>
@@ -43,6 +45,13 @@
                 </div>
                 <div class="flex flex-col group">
                     <a href="./pages/complexes-scolaires.html" class="">Complexes Scolaires</a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
+                <div class="flex flex-col group">
+                    <a target="_blank" href="https://franzer-official-website.vercel.app/" class="">Franzer
+                    </a>
                     <div
                         class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
                     </div>
@@ -85,6 +94,13 @@
                         class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
                     </div>
                 </div>
+                <div class="flex flex-col group">
+                    <a target="_blank" href="https://franzer-official-website.vercel.app/" class="">Franzer
+                    </a>
+                    <div
+                        class="mt-1 border-b border-b-white transform transition-all duration-300 w-0 group-hover:w-full ">
+                    </div>
+                </div>
             </div>
             <div class="w-56 flex justify-end ">
                 <a href="#contact-us"
@@ -101,7 +117,8 @@
         <div class="relative">
             <img class="w-full min-h-[50rem]" src="./../images/hero-school.png" alt="M-TOP complexe scolaire" srcset="">
             <div class="absolute left-0 top-0 w-full h-full bg-background z-10 bg-opacity-90 flex flex-col">
-                <div class="flex flex-col gap-4 text-white justify-center xl:w-2/3 h-full px-4 xl:pl-32">
+                <div
+                    class="header-left-text flex flex-col gap-4 text-white justify-center xl:w-2/3 h-full px-4 xl:pl-32">
                     <h1 class="text-3xl font-bold text-center xl:text-left">L'Engagement Éducatif de M-TOP: Un Avenir
                         Meilleur pour Tous</h1>
                     <p class="text-center xl:text-left">Chez M-TOP, nous croyons fermement que l’éducation est la clé du
@@ -119,7 +136,7 @@
         </div>
     </header>
     <section class="px-4 xl:px-32 mt-12">
-        <div class="xl:w-2/3 mx-auto space-y-4">
+        <div class="xl:w-2/3 mx-auto space-y-4 header-left-text">
             <h2 class="text-background text-2xl font-bold text-center">Les Complexes Scolaires M-TOP</h2>
             <p class="text-center text-gray-800">Nos complexes scolaires M-TOP couvrent toutes les étapes du parcours
                 éducatif, allant du préscolaire au lycée. Chaque niveau d'enseignement est conçu pour répondre aux
@@ -127,23 +144,23 @@
             </p>
         </div>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-12">
-            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm">
+            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm service-card-left">
                 <span class="font-semibold text-background">Bâtiments modernes et équipés</span>
                 <p>Nous avons construit des bâtiments aux normes strictes pour l'éducation, avec des salles de classe
                     spacieuses, des laboratoires, des bibliothèques, ainsi que des espaces de jeu et de sport, offrant
                     un cadre propice à l'épanouissement des élèves.</p>
             </div>
-            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm">
+            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm service-card-right">
                 <span class="font-semibold text-background">Grande capacité d'accueil</span>
                 <p>Nos écoles peuvent accueillir un grand nombre d’élèves, offrant ainsi des opportunités d’éducation à
                     des milliers de jeunes issus de diverses communautés.</p>
             </div>
-            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm">
+            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm service-card-left">
                 <span class="font-semibold text-background">Un Personnel Enseignant Qualifié et Dévoué</span>
                 <p>La qualité de l’enseignement repose non seulement sur les infrastructures, mais aussi sur les
                     enseignants qui accompagnent les élèves dans leur parcours éducatif.</p>
             </div>
-            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm">
+            <div class="border flex flex-col gap-2 bg-gray-50 p-6 rounded-sm service-card-right">
                 <span class="font-semibold text-background">Un Enseignement Orienté vers l'Avenir</span>
                 <p>En plus des programmes académiques classiques, nous préparons nos élèves pour l'avenir en favorisant
                     l'acquisition de compétences technologiques, la pensée critique et la collaboration, afin qu'ils
@@ -151,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-background py-24 mt-12 relative">
+    <section class="bg-background py-24 mt-12 relative header-left-text">
         <div class="hidden absolute right-0 top-0 xl:flex items-center h-full">
             <svg class="w-60 h-full" viewBox="0 0 338 474" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M165.266 358.671L337.98 259.213L337.98 458.129L165.266 358.671Z" fill="#05456E"
@@ -205,12 +222,12 @@
         </div>
         <div class="px-4 xl:px-32 mt-12">
             <div class="flex gap-2">
-                <img class="rounded w-1/2 xl:w-[70%] h-56 xl:h-96 object-cover"
+                <img class="rounded w-1/2 xl:w-[70%] h-56 xl:h-96 object-cover service-card-left"
                     src="./../images/IMG-20240902-WA0172.jpg" alt="" srcset="">
-                <img class="rounded w-1/2 xl:w-[30%] h-56 xl:h-96 object-cover"
+                <img class="rounded w-1/2 xl:w-[30%] h-56 xl:h-96 object-cover service-card-right"
                     src="./../images/IMG-20240902-WA0175.jpg" alt="" srcset="">
             </div>
-            <div class="grid xl:grid-cols-3 gap-2 mt-2">
+            <div class="grid xl:grid-cols-3 gap-2 mt-2 header-left-text">
                 <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/IMG-20240902-WA0161.jpg" alt=""
                     srcset="">
                 <img class="rounded w-full h-56 xl:h-96 object-cover" src="./../images/std.jpg" alt="" srcset="">
@@ -219,7 +236,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-background py-24 mt-4 xl:mt-12 relative">
+    <section class="bg-background py-24 mt-4 xl:mt-12 relative header-left-text">
         <div class="hidden absolute right-0 top-0 xl:flex items-center h-full">
             <svg class="w-60 h-full" viewBox="0 0 338 474" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M165.266 358.671L337.98 259.213L337.98 458.129L165.266 358.671Z" fill="#05456E"
