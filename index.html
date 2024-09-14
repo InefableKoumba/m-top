@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-TOP | Expertise multi-sectorielle</title>
     <link rel="stylesheet" href="./css/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./js/index.js" defer></script>
 </head>
 
@@ -98,7 +100,7 @@
             </div>
         </nav>
         <div class="flex flex-col xl:flex-row mt-24 xl:mt-44">
-            <div class="flex xl:w-1/2">
+            <div class="flex xl:w-1/2 header-left-text">
                 <div class="flex flex-col gap-4 xl:gap-8">
                     <h2 class="font-bold text-white text-2xl xl:text-3xl text-center xl:text-left">Expertise
                         multi-sectorielle depuis 2012</h2>
@@ -203,7 +205,7 @@
             </p>
         </div>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-12">
-            <div class="rounded-sm flex flex-col xl:flex-row items-center">
+            <div class="service-card-left rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/1.png" alt="Architecture et BTP"
                         class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
@@ -219,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
+            <div class="service-card-right rounded-sm flex flex-col-reverse xl:flex-row items-center">
                 <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Dragage</span>
@@ -233,7 +235,7 @@
                         class="rounded-t-lg xl:rounded-r-lg xl:rounded-l-none h-full w-full object-cover">
                 </div>
             </div>
-            <div class="rounded-sm flex flex-col xl:flex-row items-center">
+            <div class="service-card-left rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/5.jpeg" alt="Architecture et BTP"
                         class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
@@ -248,8 +250,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
+            <div class="service-card-right rounded-sm flex flex-col-reverse xl:flex-row items-center">
                 <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Commerce Général & Import-Export</span>
@@ -263,7 +264,7 @@
                         class="rounded-t-lg xl:rounded-r-lg xl:rounded-l-none h-full w-full object-cover">
                 </div>
             </div>
-            <div class="rounded-sm flex flex-col xl:flex-row items-center">
+            <div class="service-card-left rounded-sm flex flex-col xl:flex-row items-center">
                 <div class="w-full xl:w-[40%] h-60">
                     <img src="./images/4.jpeg" alt="Architecture et BTP"
                         class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
@@ -283,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rounded-sm flex flex-col-reverse xl:flex-row items-center">
+            <div class="service-card-right rounded-sm flex flex-col-reverse xl:flex-row items-center">
                 <div class="text-white xl:w-[60%] flex items-center bg-background h-60 rounded-b-lg xl:rounded-b-none">
                     <div class="bg-background flex flex-col justify-center px-4">
                         <span class="font-medium">Soutien aux entreprises pétrolières</span>
@@ -298,7 +299,7 @@
                 </div>
             </div>
         </div>
-        <div class="rounded-sm flex flex-col xl:flex-row items-center mt-4">
+        <div class="big-service-card rounded-sm flex flex-col xl:flex-row items-center mt-4">
             <div class="w-full xl:w-[40%] h-60 xl:h-96">
                 <img src="./images/programmers.jpeg" alt="Architecture et BTP"
                     class="rounded-t-lg xl:rounded-l-lg xl:rounded-r-none h-full w-full object-cover">
@@ -350,7 +351,7 @@
                     fill-opacity="0.19" />
             </svg>
         </div>
-        <div class="px-4 xl:px-0 xl:w-2/3 mx-auto">
+        <div class="px-4 xl:px-0 xl:w-2/3 mx-auto" id="about-us-section">
             <h2 class="font-bold text-center text-white text-2xl">A propos de M-TOP</h2>
             <p class="text-center text-gray-100 mt-4">Créée en 2012, M-TOP est née de la volonté d'offrir des services
                 de
@@ -366,7 +367,7 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-center items-center xl:py-24 xl:px-24 rounded-sm">
+    <section class="flex justify-center items-center xl:py-24 xl:px-24 rounded-sm" id="partners-section">
         <div class="flex flex-col xl:flex-row gap-x-14 xl:bg-gray-100 py-12 px-4 xl:p-24 xl:border border-gray-200">
             <div class="flex flex-col gap-4">
                 <span class="text-background font-bold text-2xl">Partenariats</span>
@@ -420,7 +421,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-background py-24 mt-4 xl:mt-12 relative">
+    <section class="bg-background py-24 mt-4 xl:mt-12 relative" id="contact-us-section">
         <div class="hidden absolute right-0 top-0 xl:flex items-center h-full">
             <svg class="w-60 h-full" viewBox="0 0 338 474" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M165.266 358.671L337.98 259.213L337.98 458.129L165.266 358.671Z" fill="#05456E"
